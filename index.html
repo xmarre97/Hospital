@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!--The meta tag below makes the website responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Importing frontawesome CSS from their website(icon package)-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
-    <link rel="javascript" href="script.js">
+    <!---importing bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <!--importing my own CSS-->
     <link rel="stylesheet" href="style.css">
 
     <title>MedWise</title>
@@ -39,10 +42,12 @@
                 <span class="navbar-brand mb-0 h1 medwise">
                     <i class="fas fa-stethoscope"></i>MedWise
                 </span>
+                <!--toggles the collapse with id 'collapse menu'-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-menu"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!--this is the collapse-->
                 <div class="collapse navbar-collapse" id="collapse-menu">
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link active" href="#">Home</a>
@@ -62,6 +67,7 @@
 
 
         </nav>
+        <!---the carousel slides between pictures-->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -77,18 +83,40 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-secondary  navbar-expand-lg">
-            <div class="container">
-                <span class="navbar-brand mb-0 h5">
-                    <i class="h5">Medwise custom message to for users to accept terms and conditions. To continue using
-                        this site,you must agree to our terms.</i>
-                </span>
-                <button type="button" class="btn btn-primary">ACCEPT</button>
+        <div class="bg-secondary">
+            <div class="container d-flex align-items-center">
 
+                <i class="h6 mb-0 text-white">Medwise custom message to for users to accept terms and conditions. To
+                    continue using
+                    this site,you must agree to our terms.</i>
+
+                <button type="button" class="btn btn-primary m-3">ACCEPT</button>
+
+            </div>
+        </div>
     </header>
 
     <main>
-        <nav class="navbar bg-primary"></nav>
+        <section class="bg-primary text-white text-center">
+            <!---Bootstrap gridsystem-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <i class="fas fa-clinic-medical" style="font-size:48px"></i>
+                        <h5>Best Parent Care Provided</h5>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-user-md" style="font-size:48px"></i>
+                        <h5>+ Doctors On Panel</h5>
+
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-heartbeat" style="font-size:48px"></i>
+                        <h5> Advanced MRI Machines</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
